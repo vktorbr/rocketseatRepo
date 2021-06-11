@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #282a36;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+header{
+    padding: 30px;
+    border-bottom: 1px solid #333;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.links{
+    text-align: center;
+}
+
+.links a{
+    color: white;
+    margin: 0 30px;
+    font-size: 18px;
+    line-height: 28px;
+    text-decoration: none;
+}
+
+.links a:hover{
+    color: #50fa7b;
+    transition: color 200ms;
+}
+
+/* ABOUT */
+#wrapper{
+    text-align: center;
+    padding: 1rem;
+}
+
+#wrapper img{
+    border-radius: 50%;
+    height: 25rem;
+    border: 0.5rem solid #50fa7b;
+    margin-bottom: 2rem;
+}
+
+#wrapper h1{
+    font-size: 2rem;
+    line-height: 3.5rem;
+    font-weight: bold;
+}
+
+#wrapper p{
+    max-width: 32rem;
+    margin: 1rem auto;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+} 
+
+#wrapper ul{
+    max-width: 5rem;
+    margin: 0 auto;
+}
+
+#wrapper ul li{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+#footer{
+    margin-top: 8rem;
+}
+
+#footer a{
+    border-bottom: 1px solid #50fa7b;
+}
+
+/* CONTENT */
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    max-width: 80rem;
+    margin: 0 auto 5rem;
+    align-items: center;
+}
+
+.card{
+    cursor: pointer;
+    height: 20rem;
+}
+
+.cardImage img{
+    width: 100%;
+}
+
+.cardTitle{
+    height: 4rem;
+    margin-top: 1rem;
+}
+
+.cardTitle p{
+    background: #282a36;
+    filter: brightness(80%);
+    border-radius: 20px;
+    padding: 0.7rem;
+    text-align: center;
+    margin: 0 auto;
+    height: 100%;
+    overflow-y:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.cardInfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.6rem;
+    font-size: 0.8rem;
+}
+
+.cardTime{
+    text-align: right;
+}
+
+/* MODAL */
+.modalOverlay{
+    background:rgba(0, 0, 0, 0.9);
+    position:fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal{
+    width: 90%;
+    height: 90%;
+    background: white;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal.maximize{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.buttonsModal{
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem; 
+    display: flex;
+    align-items: center;
+}
+
+.maximizeModal,
+.closeModal{
+    padding: 0.2rem;
+    cursor: pointer;
+}
+
+.maximizeModal span{
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%
+}
+
+.closeModal span{
+    font-size: 2rem;
+    width: 100%;
+    height: 100%
+}
+
+span{
+    color: black;
+}
+
+.modalContent iframe{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 10%;
+}
+
+/* MODAL ACTIVE */
+.modalOverlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
