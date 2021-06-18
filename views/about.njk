@@ -1,0 +1,23 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+<title>Sobre - {{about.title}}</title>
+{% endblock %}
+
+{% block content %}
+<div id="wrapper">
+    <img src="{{about.img_url}}" alt="Logo da {{about.title}}">
+
+    <h1>{{about.title}}</h1>
+
+    <p>
+        {{about.description}}
+    </p>
+
+    <ul>
+        {% for tech in about.techs %}
+        <li>{{tech}}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

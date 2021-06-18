@@ -1,0 +1,21 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+<title>{{card.title}}</title>
+{% endblock %}
+
+{% block content %}
+
+<div id="wrapper" class="post">
+    <h1>{{card.title}}</h1>
+</div>
+<section class="post">
+        <div class="cardPost">
+            <iframe src="https://blog.rocketseat.com.br/{{post_id}}" frameborder="0"></iframe>
+        </div>
+        <div class="cardInfo">
+            <p>{{card.author}}</p>
+            <p class="cardTime">{{card.duration}}</p>
+        </div>
+</section>
+{% endblock %}

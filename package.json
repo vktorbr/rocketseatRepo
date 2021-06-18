@@ -1,0 +1,27 @@
+{
+  "name": "modulo3",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vktorbr/rocketseatRepo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vktorbr/rocketseatRepo/issues"
+  },
+  "homepage": "https://github.com/vktorbr/rocketseatRepo#readme",
+  "description": ""
+}
